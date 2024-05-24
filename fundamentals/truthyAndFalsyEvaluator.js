@@ -1,4 +1,4 @@
-function truthyAndFalsyEvaluator(value) {
+export default function truthyAndFalsyEvaluator(value) {
   if(value){
     return true;
   }

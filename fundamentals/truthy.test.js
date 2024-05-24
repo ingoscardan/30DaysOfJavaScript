@@ -1,4 +1,4 @@
-const truthyAndFalsyEvaluator = require("./truthyAndFalsyEvaluator")
+import truthyAndFalsyEvaluator from "./truthyAndFalsyEvaluator";
 
 test('true to be true', () => {
   expect(true).toBe(true);
