@@ -1,22 +1,21 @@
 import truthyAndFalsyEvaluator from "./truthyAndFalsyEvaluator";
 
 test('true to be true', () => {
-  expect(true).toBe(true);
+  expect(truthyAndFalsyEvaluator(true)).toBe(true);
 });
 
 test('Empty object to be true', () => {
-  const result = truthyAndFalsyEvaluator({});
-  expect(result).toBe(true);
+  expect(truthyAndFalsyEvaluator({})).toBe(true);
 });
 
 test('Empty array to be true', () => {
-  expect([]).toBe(true);
+  expect(truthyAndFalsyEvaluator([])).toBe(true);
 });
 
 test('A number to be true', () => {
-  expect(23).toBe(true);
+  expect(truthyAndFalsyEvaluator(23)).toBe(true);
 });
 
 test('A non empty string to be true', () => {
-  expect('non empty string' === true).toBe(true);
+  expect(truthyAndFalsyEvaluator("Non empty string")).toBe(true);
 });
